@@ -8,3 +8,12 @@ This is an example project that showcases how to use the Translate component fro
 /vendor - contains all dependencies
 index.php - contains all the logic
 ```
+
+
+## How to install
+To install this example program follow the steps below
+```
+git clone https://github.com/HelgeSverre/slim-twig-i18n-example.git
+cd slim-twig-i18n-example
+composer update
+```
