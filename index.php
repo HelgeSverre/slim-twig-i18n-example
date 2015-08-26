@@ -14,6 +14,7 @@ require './vendor/autoload.php';
 
 // Use the ridiculously long Symfony namespaces
 use Symfony\Bridge\Twig\Extension\TranslationExtension;
+use Symfony\Component\Translation\Loader\PhpFileLoader;
 use Symfony\Component\Translation\MessageSelector;
 use Symfony\Component\Translation\Translator;
 
@@ -34,7 +35,7 @@ $translator = new Translator($language, new MessageSelector());
 $translator->setFallbackLocales(['en_US']);
 
 // Add a loader that will get the php files we are going to store our translations in
-$translator->addLoader('php', new \Symfony\Component\Translation\Loader\PhpFileLoader());
+$translator->addLoader('php', new PhpFileLoader());
 
 // Add language files here
 $translator->addResource('php', './lang/no_NB.php', 'no_NB'); // Norwegian
