@@ -19,3 +19,7 @@ git clone https://github.com/HelgeSverre/slim-twig-i18n-example.git
 cd slim-twig-i18n-example
 composer update
 ```
+
+## More in depth
+
+I wrote a blog article about this [here](https://helgesverre.com/blog/i18n-slim-framework-translation-twig/)
